@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kuy_ngaji/model/jadwal_shalat.dart';
+import 'package:kuy_ngaji/model/models.dart';
 
 class JadwalShalatPage extends StatelessWidget {
   @override
@@ -95,14 +95,16 @@ class JadwalShalatPage extends StatelessWidget {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text(mockJadwalShalat[index].nama,
-                                    style: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.bold)),
-                                Text(mockJadwalShalat[index].jam + ' WIB',
-                                    style: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.bold))
+                                Text(
+                                  mockJadwalShalat[index].nama,
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                  ),
+                                ),
+                                Text(
+                                  mockJadwalShalat[index].jam + ' WIB',
+                                  style: TextStyle(fontSize: 16),
+                                )
                               ],
                             ),
                           ),
